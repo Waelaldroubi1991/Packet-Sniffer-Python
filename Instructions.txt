@@ -1,0 +1,43 @@
+Hey
+
+this code consiste of 4 main parts:
+
+1) (PacketHeaderBase) class to go through data and get the headers.
+2) (process_packet) class to decide the header type
+3) class for each type to analysis it and to make it human readable.
+4) (main) class to call (process_packet) in an infinite loop to read streams of data.
+
+..................................
+
+how code works:
+(PacketHeaderBase) will read the data and find headers, (process_packet) will check the type of the header founded
+and will call it then the next header and then next one till the stream of data stop or finished in our case.
+
+..................................
+
+The code analysis (IPV4-TCP-UDP-ICMP-Unknown) (IPV6-TCP-UDP-ICMP-Unknown) (ARP)
+
+..................................
+
+some of the tutorials and websites used to understand the code and to get parts of the code:
+https://www.youtube.com/watch?v=WGJC5vT5YJo&list=PL6gx4Cwl9DGDdduy0IPDDHYnUx66Vc4ed (thenewboston)(English)
+https://www.youtube.com/watch?v=4KbWu6yqDCY&t=442s (Muhammed Essa)(Arabic)
+https://www.youtube.com/watch?v=ghokDuCDcMY&t=27s(Ana Balica)(English)
+https://www.youtube.com/watch?v=vVNqNeXninE&t=69s(Hacktilizer)(English)
+https://www.youtube.com/watch?v=Q9sqfPVadDY&t=76s(Learn Just What Needed - Python)(No sound just video)
+https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers
+
+(All will be mentioned in the report.
+
+..................................
+
+this program depends on pcapy python library, it is needed to be installed before running this code.
+
+..................................
+
+Note: the code is explained and has notes between its lines.
+
+Thank you
+
+Wael Aldroubi
+300456658
